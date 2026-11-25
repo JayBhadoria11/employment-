@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="EMS — simple employment management for your team."><title>EMS | Employment Management</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-mark">✦</span><div><strong>EMS</strong><small>Workforce management</small></div></div>
+  <div class="side-label">WORKSPACE</div>
+  <nav id="nav"><button class="nav-item active" data-page="dashboard"><span>◫</span> Dashboard</button><button class="nav-item" data-page="employees"><span>♙</span> Employees</button><button class="nav-item" data-page="attendance"><span>◷</span> Attendance</button><button class="nav-item" data-page="leave"><span>▣</span> Leave management <span class="nav-badge" id="leaveBadge"></span></button><button class="nav-item" data-page="payroll"><span>＄</span> Payroll</button><button class="nav-item" data-page="reports"><span>▥</span> Reports</button></nav>
+  <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✧</div><strong>Need a hand?</strong><p>Keep your team's operations running smoothly.</p><button class="btn btn-outline btn-sm" onclick="toast('Help centre coming soon!')">Visit help centre</button></div><div class="profile"><div class="avatar avatar-purple">AD</div><div><strong>Admin</strong><small>Administrator</small></div><button class="more" onclick="toast('Account settings coming soon')">···</button></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="menu-btn" id="menuBtn">☰</button><div class="breadcrumbs"><span>Workspace</span><span class="slash">/</span><strong id="pageTitle">Dashboard</strong></div><div class="top-actions"><span class="date" id="dateText"></span><button class="icon-btn" title="Notifications" onclick="toast('You are all caught up!')">♧</button><div class="avatar avatar-purple">AD</div></div></header>
+<div class="content" id="content"></div>
+<footer>EMS <span>·</span> Employment Management System <span class="footer-right">Made for better workplaces</span></footer>
+</main></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div><div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
